@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f0f0d7;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -12,11 +18,18 @@ a {
   padding-right: 40px;
 }
 
+pre {
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #727d73;
+  font-weight: bolder;
+}
+
 a:hover {
-  background-color: aliceblue;
+  background-color: #d0ddd0;
   color: black;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 div.navbar-left a {
@@ -33,7 +46,7 @@ div.navbar-container {
   width: 100vw;
   height: 8vh;
   padding: 0px 40px 0px 40px;
-  background-color: gray;
+  background-color: #727d73;
   box-shadow: 2px 2px 3px black;
 }
 
@@ -62,7 +75,7 @@ div.lab-dropdown {
 div.lab-content {
   display: none;
   position: absolute;
-  background-color: gray;
+  background-color: #aab99a;
   min-width: 100%;
   z-index: 1;
 }
@@ -73,4 +86,12 @@ div.lab-content a {
 
 div.lab-dropdown:hover .lab-content {
   display: block;
+}
+
+div.home-content {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
